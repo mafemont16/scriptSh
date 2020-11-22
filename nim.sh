@@ -1,17 +1,17 @@
-#!/bin/bash 
+#!/bin/bash
 
 echo ""
 echo "*****************************************************"
 echo "*****************************************************"
-echo "************** Welcome to the Nim Game **************"
+echo ">>------>******Welcome to the Nim Game******<------<<"
 echo "*****************************************************"
 echo "*****************************************************"
 echo ""
 echo "Hello there! What's your name?"
 echo ""
-read name 
+read name
 echo ""
-echo "Welcome to the game, $name"
+echo "Welcome to the Nim game (^_^), $name"
 echo "*****************************************************"
 
 
@@ -36,7 +36,7 @@ do
         done
         echo "$name, you take $player_choice"
         let "nb_items=$nb_items - $player_choice"
-        echo "Now there are: $nb_items left" 
+        echo "Now there are: $nb_items left"
         echo ""
     #Turn of IA - computer
         echo "Computer's turn: "
@@ -44,7 +44,7 @@ do
         let "ai_choice=4 - $player_choice"
         echo "Computer, you took $ai_choice"
         let "nb_items=$nb_items-$ai_choice"
-        echo "Now there are: $nb_items" 
+        echo "Now there are: $nb_items"
         if [ $nb_items -eq 0 ]
         then
             echo "You lost!"
